@@ -33,7 +33,6 @@ img {
   max-width: auto; }
 
 .banner {
-  height: 500px;
   position: absolute;
   left: 0;
   right: 0;
@@ -41,6 +40,10 @@ img {
 .banner.static {
   position: static;
   height: auto; }
+.banner[data-banner="home_img"] {
+  text-align: center; }
+.banner[data-banner="home_img"] img {
+  margin-bottom: -2px; }
 .banner[data-banner="home"] {
   padding: 10% 5% 10%; }
 .banner[data-banner="home"] h1 {
@@ -321,12 +324,12 @@ img {
   background: linear-gradient(#aaaaaa, #777777); }
 
 .dark_gray {
-  background: #555555;
-  background: -webkit-linear-gradient(#555555, #333333);
-  background: -moz-linear-gradient(#555555, #333333);
-  background: -o-linear-gradient(#555555, #333333);
-  background: -ms-linear-gradient(#555555, #333333);
-  background: linear-gradient(#555555, #333333); }
+  background: #444444;
+  background: -webkit-linear-gradient(#444444, #222222);
+  background: -moz-linear-gradient(#444444, #222222);
+  background: -o-linear-gradient(#444444, #222222);
+  background: -ms-linear-gradient(#444444, #222222);
+  background: linear-gradient(#444444, #222222); }
 
 .orange {
   background: #D56C32;
@@ -662,8 +665,8 @@ a.button, .button {
     padding-right: 0px; }
 
   .banner {
-    padding-left: 3% !important;
-    padding-right: 3% !important; }
+    padding-left: 3%;
+    padding-right: 3%; }
   .banner .banner_title {
     font-size: 24px;
     line-height: 32px; }
@@ -672,6 +675,9 @@ a.button, .button {
     line-height: 24px; }
   .banner[data-banner="process"] #three_steps li {
     padding: 0px 20px; }
+  .banner[data-banner="home_img"] {
+    padding-left: 0;
+    padding-right: 0; }
   .banner[data-banner="home"] h1, .banner[data-banner="home"] h2, .banner[data-banner="home"] p {
     width: auto; }
   .banner[data-banner="home"] h1 .button.orange, .banner[data-banner="home"] h2 .button.orange, .banner[data-banner="home"] p .button.orange {
@@ -687,7 +693,7 @@ a.button, .button {
     visibility: hidden; } }
 @media screen and (min-width: 600px) {
   #logo a {
-    padding: 12px 28px; } }
+    padding: 18px 28px; } }
 @media screen and (max-width: 600px) {
   .topbar .nav a[href="/#!/pricing"], .topbar .nav a[href="/#!/faqs"] {
     display: none; }

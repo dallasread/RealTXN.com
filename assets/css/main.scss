@@ -46,7 +46,6 @@ img {
 }
 
 .banner {
-  height: 500px;
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -57,9 +56,17 @@ img {
 		height: auto;
 	}
 	
+	&[data-banner="home_img"] {
+		text-align: center;
+
+		img {
+			margin-bottom: -2px;
+		}
+	}
+	
 	&[data-banner="home"] {
 		padding: 10% 5% 10%;
-
+		
 		h1 {
 			font-weight: bold;
 			color: #fff;
@@ -456,12 +463,12 @@ img {
 }
 
 .dark_gray {
-  background: #555555;
-  background: -webkit-linear-gradient(#555555, #333333);
-  background: -moz-linear-gradient(#555555, #333333);
-  background: -o-linear-gradient(#555555, #333333);
-  background: -ms-linear-gradient(#555555, #333333);
-  background: linear-gradient(#555555, #333333);
+  background: #444444;
+  background: -webkit-linear-gradient(#444444, #222222);
+  background: -moz-linear-gradient(#444444, #222222);
+  background: -o-linear-gradient(#444444, #222222);
+  background: -ms-linear-gradient(#444444, #222222);
+  background: linear-gradient(#444444, #222222);
 }
 
 .orange {
@@ -939,8 +946,8 @@ a.button, .button {
 	}
 	
 	.banner {
-		padding-left: 3% !important;
-		padding-right: 3% !important;
+		padding-left: 3%;
+		padding-right: 3%;
 		
 		.banner_title {
 			font-size: 24px;
@@ -954,6 +961,11 @@ a.button, .button {
 		
 		&[data-banner="process"] #three_steps li {
 			padding: 0px 20px;
+		}
+		
+		&[data-banner="home_img"] {
+			padding-left: 0;
+			padding-right: 0;
 		}
 		
 		&[data-banner="home"] {
@@ -985,7 +997,7 @@ a.button, .button {
 @media screen and (min-width: 600px) {
 	#logo {
 	  a {
-	    padding: 12px 28px;
+	    padding: 18px 28px;
 	  }
 	}
 }
