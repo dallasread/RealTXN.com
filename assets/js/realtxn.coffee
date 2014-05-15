@@ -1,6 +1,16 @@
 ---
 ---
 
+$(document).on "click", ".show_in_dialog", ->
+	src = $(this).attr("href")
+	$("#dialog img").attr "src", src
+	$("#dialog").show()
+	false
+
+$(document).on "click", "#dialog", ->
+	$(this).hide()
+	false
+
 @ig =
 	setSidebarHeight: ->
 		if $(".sidebar").length

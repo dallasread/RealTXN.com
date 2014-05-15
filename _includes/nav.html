@@ -28,7 +28,7 @@
           {% assign selected = 'selected' %}
         {% endif %}
 
-        <li>
+        <li class="{% if link.desktop_only %}desktop_only{% endif %}">
           <a class="{{ selected }}" href="{{ link.permalink }}">{{ link.text }}</a>
         </li>
       {% endfor %}

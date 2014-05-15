@@ -5,21 +5,22 @@ future: false
 sass:
   style: :compressed
 nav_right:
-- text: Demo
-  url: /
-  permalink: /#!/demo
-- text: Buy Now
+- text: Sign Up
   url: /
   permalink: /#!/buy
+  desktop_only: true
 - text: FAQs
   url: /
   permalink: /#!/faqs
-- text: Blog
+  desktop_only: false
+- text: What's New?
   url: /blog/index.html
   permalink: /blog
+  desktop_only: true
 - text: Sign In
-  url: http://realtxn.com/users/sign-in
-  permalink: http://realtxn.com/users/sign-in
+  url: http://app.realtxn.com/users/sign_in
+  permalink: http://app.realtxn.com/users/sign_in
+  desktop_only: false
 authors:
   rdr:
     name: Dallas Read

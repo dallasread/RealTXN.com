@@ -46,6 +46,7 @@ img {
 }
 
 .banner {
+  height: 500px;
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -74,10 +75,12 @@ img {
 			font-size: 30px;
 			line-height: 40px;
 			width: 55%;
+			margin: 0 auto;
 		}
 	
 		h2 {
 			width: 55%;
+			margin: 0 auto;
 			color: rgba(255, 255, 255, 0.8);
 			text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 			font-size: 17px;
@@ -86,7 +89,8 @@ img {
 		}
 		
 		p {
-			margin-top: 20px;
+			width: 55%;
+			margin: 40px auto 0 auto;
 			
 			.button.translucent {
 				margin-left: 20px;
@@ -426,6 +430,15 @@ img {
   background: linear-gradient(#1272ac, #489dce, #fafafa);
 }
 
+.maroon {
+  background: #690018;
+  background: -webkit-linear-gradient(#690018, #520013);
+  background: -moz-linear-gradient(#690018, #520013);
+  background: -o-linear-gradient(#690018, #520013);
+  background: -ms-linear-gradient(#690018, #520013);
+  background: linear-gradient(#690018, #520013);	
+}
+
 .brown_white {
   background: #CEBAA1;
   background: -webkit-linear-gradient(#CEBAA1, #fafafa);
@@ -736,7 +749,7 @@ img {
   }
 	
 	a {
-		color: #1272ac;
+		color: #900022;
 	}
 	
   .content {
@@ -847,6 +860,10 @@ a.button, .button {
 	background: -ms-linear-gradient(top,  #fcfcfc 0%,#f2f2f2 100%);
 	background: linear-gradient(to bottom,  #fcfcfc 0%,#f2f2f2 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#f2f2f2',GradientType=0 );
+}
+
+.last_before_footer {
+	padding-bottom: 30px;
 }
 
 .footer {
@@ -994,6 +1011,25 @@ a.button, .button {
 	}
 }
 
+#dialog {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: 000;
+	background: rgba(0, 0, 0, 0.8);
+	text-align: center;
+	padding: 20px;
+	z-index: 9999999;
+	
+	img {
+		width: 100%;
+		max-width: 945px;
+	}
+}
+
 @media screen and (min-width: 600px) {
 	#logo {
 	  a {
@@ -1003,13 +1039,13 @@ a.button, .button {
 }
 
 @media screen and (max-width: 600px) {
-	.topbar .nav a[href="/#!/pricing"], .topbar .nav a[href="/#!/faqs"] {
+	.desktop_only {
 		display: none;
 	}
 
 	#logo {
 	  a {
-	    padding: 13px;
+	    padding: 18px 13px;
 	  }
 	}
 	
