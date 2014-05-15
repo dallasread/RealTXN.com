@@ -1,4 +1,17 @@
 (function() {
+  $(document).on("click", ".show_in_dialog", function() {
+    var src;
+    src = $(this).attr("href");
+    $("#dialog img").attr("src", src);
+    $("#dialog").show();
+    return false;
+  });
+
+  $(document).on("click", "#dialog", function() {
+    $(this).hide();
+    return false;
+  });
+
   this.ig = {
     setSidebarHeight: function() {
       var height;
