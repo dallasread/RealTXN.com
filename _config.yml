@@ -1,0 +1,28 @@
+name: RealTXN.com
+markdown: kramdown
+permalink: /:year/:month/:title
+future: false
+sass:
+  style: :compressed
+nav_right:
+- text: Demo
+  url: /
+  permalink: /#!/demo
+- text: Buy Now
+  url: /
+  permalink: /#!/buy
+- text: FAQs
+  url: /
+  permalink: /#!/faqs
+- text: Blog
+  url: /blog/index.html
+  permalink: /blog
+- text: Sign In
+  url: http://realtxn.com/users/sign-in
+  permalink: http://realtxn.com/users/sign-in
+authors:
+  rdr:
+    name: Dallas Read
+    position: Developer
+    plus: +DallasRead
+    initials: rdr

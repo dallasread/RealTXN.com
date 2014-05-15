@@ -1,0 +1,19 @@
+<div class="widget">
+  <h3>Hot Off the Press</h3>
+  <ul class="latest_posts">
+    {% for post in site.posts limit:6 %}   
+      {% assign selected = nil %}
+      {% if page.url == post.url %}
+        {% assign selected = 'selected' %}
+      {% endif %}
+       
+      <li>
+        <a href="{{ post.url }}" class="{{ selected }}">
+          <span class="title">
+            {{ post.title }}
+          </span>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

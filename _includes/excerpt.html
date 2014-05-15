@@ -1,0 +1,39 @@
+{% assign post = page %}
+{% assign author = site.authors[post.author] %}
+{% assign more = post.content | split: "<!-- more -->" | size %}
+
+<div class="post {{ include.style }}">
+  <div class="author">
+    <div class="avatar" style="background-image: url(/assets/imgs/profiles/{{ author.initials }}.jpg); "></div>
+    <span class="name"><a href="https://plus.google.com/{{ author.plus }}?rel=author">{{ author.name }}</a></span>
+    <span class="position">{{ author.position }}</span>
+  </div>
+
+  <div class="details">
+    <h1 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    <!--<span class="tags">{{ post.tags | array_to_sentence_string }}</span>-->
+    <h5 class="date">{{ post.location }} &nbsp; &mdash; &nbsp; {{ post.date | date_to_string }}</h5>
+    
+    {% if include.style == "single" %}
+      {% if post.img %}
+        <div class="align_center">
+          <img src="{{ post.img }}" class="featured_img">
+        </div>
+      {% endif %}
+    {% endif %}
+    
+    {% if include.style == "excerpt" %}
+      <div class="content">{{ post.content | split: "<!-- more -->" | first }}</div>
+      
+      {% if more != 1 %}
+        <div class="align_right">
+          <a href="{{ post.url }}" class="read_more button button_blue small">Read more &nbsp; &rarr;</a>
+        </div>
+      {% endif %}
+    {% else %}
+      <div class="content">{{ post.content | markdownify }}</div>
+    {% endif %}
+  </div>
+  
+  <div class="clear"></div>
+</div>
