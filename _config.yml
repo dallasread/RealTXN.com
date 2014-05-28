@@ -7,7 +7,7 @@ sass:
 nav_right:
 - text: Sign Up
   url: /
-  permalink: /#!/buy
+  permalink: http://app.realtxn.com/users/sign_up
   desktop_only: true
 - text: FAQs
   url: /
