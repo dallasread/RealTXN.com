@@ -3,7 +3,7 @@
 
 $(document).on "click", ".show_in_dialog", ->
 	src = $(this).attr("href")
-	$("#dialog img").attr "src", src
+	$("#dialog iframe").attr "src", src
 	$("#dialog").show()
 	false
 

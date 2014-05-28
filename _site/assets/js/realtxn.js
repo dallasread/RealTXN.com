@@ -2,7 +2,7 @@
   $(document).on("click", ".show_in_dialog", function() {
     var src;
     src = $(this).attr("href");
-    $("#dialog img").attr("src", src);
+    $("#dialog iframe").attr("src", src);
     $("#dialog").show();
     return false;
   });

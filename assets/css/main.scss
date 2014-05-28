@@ -318,7 +318,7 @@ img {
 	}
 	
 	&[data-banner="faqs"] {
-		padding: 100px 15% 20px;
+		padding: 100px 30% 20px;
 		
 		.banner_title {
 			color: #fff;
@@ -1024,9 +1024,14 @@ a.button, .button {
 	padding: 20px;
 	z-index: 9999999;
 	
-	img {
-		width: 100%;
-		max-width: 945px;
+	iframe {
+		position: fixed;
+		width: 504px;
+		height: 378px;
+		left: 50%;
+		top: 50%;
+		margin-left: -252px;
+		margin-top: -189px;
 	}
 }
 
@@ -1104,6 +1109,19 @@ a.button, .button {
 		}
 	}
 	
+	#dialog {
+		iframe {
+			width: auto;
+			height: auto;
+			left: 60px;
+			top: 50px;
+			bottom: 20px;
+			right: 60px;
+			margin-left: 0;
+			margin-top: 0;
+		}
+	}
+	
 	#page {
 		padding-top: 50px;
 		padding-bottom: 50px;
@@ -1133,7 +1151,7 @@ a.button, .button {
 		}
 		
 		&[data-banner="faqs"] {
-			padding-top: 50px;
+			padding: 50px 10px 20px;
 			
 			.faqs {
 				padding: 20px;
