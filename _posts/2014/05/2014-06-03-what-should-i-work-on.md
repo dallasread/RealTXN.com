@@ -31,4 +31,4 @@ If you want to really make an irreplaceable difference, spend your time doing th
 
 Routines happen to be the biggest Return On Investment for any company. Every time they're used, the initial investment skyrockets.
 
-TLDR; Routines are the vital, but *you* shouldn't be wasting your time doing them. Create routines, then outsource them to better tools or employees. 
+TLDR; Routines are vital, but *you* shouldn't be wasting your time doing them. Create routines, then outsource them to better tools or employees. 
